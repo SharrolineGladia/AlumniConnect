@@ -1,40 +1,62 @@
-# alumni_app
+# 🎓 Alumni Connect
 
-This application is used to connect various alumni of our college , bringing them together in a collaborative platform .
+A modern Flutter application that helps alumni stay connected through a social media-style platform. Built with **Flutter** for the frontend and **Firebase** for backend services, the app supports real-time interactions, content sharing, and user networking.
 
+---
 
-## Getting Started
+## 🚀 Features
+
+### 👥 User Management
+- 🔐 Alumni registration & login using **Firebase Authentication**
+- 🛠️ Profile setup and updates (name, bio, profile picture)
+- 👤 View and search other users
+
+### 🧾 Social Feed
+- 📸 Create image/video posts
+- 📰 View posts from people you follow in a live feed
+- ❤️ Like and comment (can be added as future enhancement)
+
+### 💬 Real-Time Chat
+- 💬 One-to-one chat with other users
+- 📡 Instant messaging via **Firebase Realtime Database**
+- 🟢 Online/offline status indicators (optional)
+
+### 🔍 Search & Follow
+- 🔍 Search alumni by name, batch, or domain
+- ➕ Follow/Unfollow functionality to customize your feed
+
+### 📂 Media Uploads
+- Upload profile photos and posts using **Firebase Storage**
+- Optimized media handling and image previews
+
+---
+
+## 🧰 Tech Stack
+
+### Frontend
+- ⚙️ **Flutter** (v3.x)
+- 📱 Responsive design for Android & iOS
+- 🔁 State Management: `Provider` / `Riverpod` (choose based on your code)
+
+### Backend (Firebase)
+- 🔐 Firebase Authentication
+- 🗃️ Firebase Realtime Database
+- ☁️ Firebase Cloud Storage
+- 🔔 Firebase Cloud Messaging (optional for push notifications)
+
+---
+
+## 🛠️ Installation
 
 ### Prerequisites
+- Flutter SDK installed
+- Firebase project configured
+- Android/iOS device or emulator
 
-- [Flutter](https://flutter.dev/docs/get-started/install)
-- [Firebase Account](https://firebase.google.com/)
+### Steps
 
-### Installation
-
-1. **Clone the repository:**
-
-    ```sh
-    git clone https://github.com/your_username/alumni_app.git
-    cd alumni_app
-    ```
-
-2. **Install dependencies:**
-
-    ```sh
-    flutter pub get
-    ```
-
-3. **Set up Firebase:**
-
-    - Go to the [Firebase Console](https://console.firebase.google.com/).
-    - Create a new project.
-    - Add an Android app and an iOS app to your Firebase project.
-    - Download the `google-services.json` file for Android and place it in the `android/app` directory.
-    - Download the `GoogleService-Info.plist` file for iOS and place it in the `ios/Runner` directory.
-
-4. **Run the app:**
-
-    ```sh
-    flutter run
-    ```
+```bash
+git clone https://github.com/SharrolineGladia/AlumniConnect.git
+cd AlumniConnect
+flutter pub get
+flutter run
